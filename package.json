@@ -1,0 +1,30 @@
+{
+  "name": "webcraft-pro-website",
+  "version": "1.0.0",
+  "description": "A modern, professional landing page website for a web development agency",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "web-development",
+    "landing-page",
+    "agency",
+    "responsive",
+    "modern",
+    "tailwind-css",
+    "javascript"
+  ],
+  "author": "WebCraft Pro",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webcraftpro/website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webcraftpro/website/issues"
+  },
+  "homepage": "https://webcraftpro.com"
+}

@@ -1,0 +1,184 @@
+/* Custom CSS for WebCraft Pro */
+
+/* Font Family */
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navigation Links */
+.nav-link {
+    @apply text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium transition-colors duration-200;
+}
+
+.mobile-nav-link {
+    @apply block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors duration-200;
+}
+
+/* Buttons */
+.btn-primary {
+    @apply inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200 shadow-lg hover:shadow-xl;
+}
+
+.btn-secondary {
+    @apply inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-lg text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200 shadow-lg hover:shadow-xl;
+}
+
+/* Service Cards */
+.service-card {
+    @apply p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-blue-200 dark:hover:border-blue-700;
+}
+
+.service-icon {
+    @apply w-16 h-16 rounded-2xl flex items-center justify-center mb-6;
+}
+
+.service-icon i {
+    @apply text-2xl;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    @apply p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700;
+}
+
+/* Portfolio Cards */
+.portfolio-card {
+    @apply cursor-pointer;
+}
+
+/* Pricing Cards */
+.pricing-card {
+    @apply p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 text-center;
+}
+
+/* Contact Form */
+.contact-form-container {
+    @apply bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow-lg;
+}
+
+.form-label {
+    @apply block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2;
+}
+
+.form-input {
+    @apply w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-colors duration-200;
+}
+
+/* Footer Links */
+.footer-link {
+    @apply text-gray-400 hover:text-white transition-colors duration-200;
+}
+
+.social-link {
+    @apply w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-lg flex items-center justify-center text-gray-400 hover:text-white transition-all duration-200;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Hover Effects */
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+    background: #374151;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #6b7280;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}
+
+/* Loading Animation */
+.loading {
+    @apply animate-pulse bg-gray-200 dark:bg-gray-700 rounded;
+}
+
+/* Success/Error Messages */
+.message {
+    @apply p-4 rounded-lg mb-4;
+}
+
+.message.success {
+    @apply bg-green-100 border border-green-400 text-green-700 dark:bg-green-900 dark:border-green-700 dark:text-green-300;
+}
+
+.message.error {
+    @apply bg-red-100 border border-red-400 text-red-700 dark:bg-red-900 dark:border-red-700 dark:text-red-300;
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+    .service-card,
+    .testimonial-card,
+    .pricing-card {
+        @apply p-6;
+    }
+    
+    .contact-form-container {
+        @apply p-6;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .btn-primary,
+    .btn-secondary,
+    #theme-toggle,
+    #mobile-menu-button {
+        display: none !important;
+    }
+}
